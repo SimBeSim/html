@@ -1,0 +1,17 @@
+.path {
+  height:150px; 
+  width:60%;
+  /* border: 1px solid red; */
+}
+.path path {
+  stroke: gray;
+  stroke-width: 10;
+  fill: none;
+}
+.defs {
+  height:0;
+}
+
+/*others*/
+#input {width: 100%; font-size: 10px;}
+#output {width: 100%; font-size: 12px;}

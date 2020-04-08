@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script src="SVGPathUtils.js"></script>
+	<script src="script.js"></script>
+
+</head>
+
+<body>
+
+	<h3>Calculate Inverse Path from Path</h3>
+
+	<div>
+		<div>Path data: </div>
+		<div><textarea oninput="onInput(this.value)" id="input"></textarea></div>
+		<svg class="path" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg">
+			<path id="path" marker-start="url(#arrowstart)" marker-end="url(#arrowend)"></path>
+		</svg>
+	</div>
+
+	<div>
+		<div>Inverse Path data: </div>
+		<div id="output"></div>
+		<svg class="path" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg">
+			<path id="inverse_path" marker-start="url(#arrowstart)" marker-end="url(#arrowend)"></path>
+		</svg>
+	</div>
+
+	<svg class="defs">
+		<defs>
+			<marker id="arrowstart" markerWidth="10" markerHeight="10" orient="auto" refX="2" refY="2" fill="red">
+				<circle r="2" cx="2" cy="2" />
+			</marker>
+			<marker id="arrowend" markerWidth="5" markerHeight="5" orient="auto" refX="1" refY="2.5" fill="red">
+				<polygon points="0,0 5,2.5 0,5" />
+			</marker>
+		</defs>
+	</svg>
+
+	<div>
+		<a href="https://github.com/krispo/svg-path-utils" target="_blank">More details here</a>
+	</div>
+
+</body>
+
+</html>
